@@ -1,4 +1,21 @@
 $(function(){
+
+  $('.shop-content__filter-button').on('click' ,function () {
+    $('.shop-content__filter-button').removeClass('shop-content__filter-button--active');
+    $(this).addClass('shop-content__filter-button--active')
+  });
+  $('.button-list').on('click' ,function() {
+    $('.product-item').addClass('product-item--list');
+  });
+  $('.button-grid').on('click', function () {
+    $('.product-item').removeClass('product-item--list');
+  });
+  
+  
+
+
+  $('.select-style').styler();
+
 $('.filter-price__input').ionRangeSlider({
   type: "double",
   prefix: "$",

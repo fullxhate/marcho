@@ -90,3 +90,49 @@ a {
       color:inherit;
     }
   }
+  .header--404-page{
+    background-color: $bg;
+  }
+  .pagination{
+     display: flex;
+     justify-content: center;
+     padding: 30px 0;
+     .pagination__list{
+      display: flex;
+      padding: 0 35px;
+
+     }
+     &__link{
+      padding: 0 15px;
+     }
+     &__link--active{
+      color: $accent;
+     }
+     &__arrows{
+      text-transform: uppercase;
+      position: relative;
+      &::before{
+        content: '';
+        position: absolute;
+        width: 5px;
+        height: 10px;
+      }
+    }
+      &__prev{
+        padding-left: 15px;
+        &::before{
+          background-image: url('../images/icons/arrow-pag-left.svg');
+          left: 0;
+          top: 3px;
+        }
+      }
+      &__next{
+        padding-right: 15PX;
+        &::before{
+          background-image: url('../images/icons/arrow-pag-right.svg');
+          right: 0;
+          top: 3px;
+        }
+      }
+    
+  }
