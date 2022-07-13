@@ -68,6 +68,10 @@ a {
       color: #727272;
       padding-right: 40px;
       position: relative;
+      &:last-child{
+        &::after {
+            display: none;
+          }
       &::before{
         content:"";
         position: absolute;
@@ -77,10 +81,7 @@ a {
         width: 9px;
         height: 10px;
       }
-      &:last-child{
-        &::after {
-            display: none;
-          }
+      
         color:$accent;
         padding-right: 0;
         
