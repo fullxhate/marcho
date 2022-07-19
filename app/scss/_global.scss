@@ -1,16 +1,15 @@
 html,
 body{
   height: 100%;
-}
-
-body {
   color: $default;
   font-size: 16px;
-  line-weight: 26px;
+  line-height: 26px;
   @extend %quicksand-500;
   display: flex;
   flex-direction: column;
 }
+
+
 .header--404-page{
   background-color: $bg;
 }
@@ -60,6 +59,7 @@ a {
       height: 16px;
       left: 0;
       top: -1px;
+      
     }
     &__list{
       display: flex;
@@ -69,9 +69,7 @@ a {
       padding-right: 40px;
       position: relative;
       &:last-child{
-        &::after {
-            display: none;
-          }
+        
       &::before{
         content:"";
         position: absolute;
@@ -80,6 +78,9 @@ a {
         right: 15px;
         width: 9px;
         height: 10px;
+        &::after {
+            display: none;
+          }
       }
       
         color:$accent;
